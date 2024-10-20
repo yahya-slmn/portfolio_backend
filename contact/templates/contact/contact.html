@@ -1,0 +1,30 @@
+{% extends 'contact/base.html' %}
+{% load static %}
+
+
+{% block title %}Contact Me - Yahya Sleiman{% endblock %}
+
+{% block content %}
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <div class="input-group">
+            <div class="input-box">
+                {{ form.full_name }}
+                {{ form.email }}
+            </div>
+            <div class="input-box">
+                {{ form.phone_number }}
+                {{ form.subject }}
+            </div>
+        </div>
+
+        <div class="input-group-2">
+            {{ form.message }}
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form>
+</section>
+{% endblock %}

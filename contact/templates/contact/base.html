@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Yahya Sleiman{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Yahya <span>Sleiman</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="{% url 'home' %}" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+
+        <div class="dropdown">
+            <button id="theme-toggle" class="btn">Themes</button>
+            <div id="theme-options" class="dropdown-content">
+                <a href="#" data-theme="dark">Dark Mode</a>
+                <a href="#" data-theme="light">Light Mode</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100010341457779" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/codewithyahya01/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://wa.me/96170276940" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="tel:+96170276940" target="_blank"><i class='bx bx-phone-call'></i></a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#home">FAQ</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#education">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+
+        <p class="copyright">© Yahya Sleiman | All Rights Reserved</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

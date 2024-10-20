@@ -1,0 +1,127 @@
+{% extends 'contact/base.html' %}
+{% load static %}
+
+{% block title %}Home - Yahya Sleiman{% endblock %}
+
+{% block content %}
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi, It's <span>Yahya</span></h1>
+        <h3 class="text-animation">I'am a <span></span></h3>
+        <p>I am Yahya Sleiman, a passionate and dedicated full-stack developer with expertise in creating modern, responsive web applications. Let’s build something great together!</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100010341457779" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/codewithyahya01/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://wa.me/96170276940" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="tel:+96170276940" target="_blank"><i class='bx bx-phone-call'></i></a>
+        </div>
+    </div>
+    <div class="home-img">
+        <img id="profile-img" src="{% static 'images/img1.png' %}" alt="Yahya Sleiman">
+        
+    </div>
+    </div>
+</section>
+
+<section class="education" id="education">
+    <h2 class="heading">Education</h2>
+    <div class="timeline-items">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+                <h3>High School - General Science</h3>
+                <p>Graduated in General Science with a total score of 16/20, building a strong foundation in analytical thinking and problem-solving.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+                <h3>Online Courses</h3>
+                <p>Completed several online courses from FreeCodeCamp and Coursera, gaining valuable skills in web development and software engineering.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <h3>Full Stack Software Developer Certification</h3>
+                <p>Achieved a Full Stack Software Developer certificate from IBM, specializing in front-end and back-end web development, and modern web technologies.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+                <h3>Freelance Web Developer</h3>
+                <p>Currently working as a freelancer, building custom websites and portfolios for individuals and companies, delivering modern and responsive digital solutions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="heading">Services</h2>
+    <div class="services-container">
+        <div class="service-box">
+            <div class="service-info">
+                <h4>Back-End Developer</h4>
+                <p>Developing robust server-side applications using technologies like Node.js, Django, and SQL databases, ensuring seamless data flow and secure application functionality.</p>
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="service-info">
+                <h4>Web Designer</h4>
+                <p>Crafting modern, aesthetically pleasing, and functional website designs. Balancing creativity with usability to design intuitive user interfaces that captivate and engage users.</p>
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="service-info">
+                <h4>UI/UX Designer</h4>
+                <p>Designing user-centered interfaces that provide seamless and enjoyable experiences. Skilled in wireframing, prototyping, and user research to ensure intuitive user journeys.</p>
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="service-info">
+                <h4>Front-End Developer</h4>
+                <p>Building responsive and visually engaging websites using modern front-end technologies like HTML, CSS, JavaScript, and React. Focused on delivering high-quality user experiences.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+    <h2 class="heading">Testimonials</h2>
+    <div class="testimonials-box">
+        <div class="wrapper">
+            <div class="testimonial-item">
+                <img src="{% static 'images/img2.png' %}" alt="Mhamad">
+                <h2>Mhamad</h2>
+                <div class="rating">
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                </div>
+                <p>“Yahya is a highly skilled developer. He transformed our website into a fast, responsive, and beautifully designed platform. His attention to detail is unmatched, and he is an absolute pleasure to work with.”</p>
+            </div>
+
+            <div class="testimonial-item">
+                <img src="{% static 'images/img3.png' %}" alt="Wael">
+                <h2>Wael</h2>
+                <div class="rating">
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                </div>
+                <p>“Yahya provided exceptional frontend and backend development services for our e-commerce platform. His expertise helped us scale the platform, and he’s always responsive to our needs.”</p>
+            </div>
+
+            <div class="testimonial-item">
+                <img src="{% static 'images/img1.png' %}" alt="Omar">
+                <h2>Omar</h2>
+                <div class="rating">
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                </div>
+                <p>“Working with Yahya was fantastic! He was able to bring our vision to life in a short period of time and delivered a highly functional, beautiful website. I highly recommend him!”</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
